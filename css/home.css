@@ -1,0 +1,163 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	background-color: #f0f2f5;
+}
+.nav{
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	/*position: fixed;*/
+	color: black;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.search{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 13px; 
+}
+.search input{
+   height: 3rem;
+   width: 21rem;
+   text-align: center;
+   outline: none;
+   font-size: 18px;
+   background-color: #f0f2f5;
+   border-radius: 7px;
+   border: 2px solid #c7ecee;
+   padding: 10px;
+   transition: 0.21s;
+}
+#search, #user{
+	display: none;
+}
+.search input:focus{
+	border:2px solid #a29bfe;
+}
+.user{
+	text-align: right;
+	margin-top: -30px;
+}
+.user img{
+	width: 40px;
+	margin-top: -10px;
+	border-radius: 50%;
+}
+.recents{
+	background-color: #fff;
+	float: left;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+	width: 20%;
+	margin: auto;
+	margin-left: 20px;
+	margin-top: 100px;
+	padding: 20px;
+	border-radius: 10px;
+}
+.recents a{
+	color: #5f27cd;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+.post{
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+	width: 40%;
+	margin: auto;
+	margin-top: 90px;
+	padding: 20px;
+	border-radius: 10px;
+}
+@media(max-width: 771px){
+	.post{
+		width: 80%;
+	}
+	.recents{
+		display: none;
+	}
+}
+
+.post img{
+	width: 50px;
+	border-radius: 50%;
+}
+.post input{
+	float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 3rem;
+	outline: none;
+	border-radius: 50px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #f0f2f5;
+	border: 2px solid #c7ecee;
+}
+.newsfeed{
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+	width: 40%;
+	margin: auto;
+	margin-top: 40px;
+	padding: 20px;
+	border-radius: 10px;	
+}
+.newsfeed img{
+	width: 40px;
+	border-radius: 50%;	
+	display: inline-block;
+    vertical-align: top;
+}
+.newsfeed a{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+}
+.newsfeed strong{
+	padding: 10px;
+}
+@media(max-width: 771px){
+	.newsfeed{
+		width: 80%;
+	}
+}
+@media(max-width: 686px){
+	.user a{
+		display: none;
+	}
+}
+@media(max-width: 494px){
+	.search input{
+		display: none;
+	}
+}
+@media(max-width: 362px){
+	.post input{
+		float: left;
+		margin-top: -50px;
+		margin-left: 60px;
+	}
+}
+@media(max-width: 494px){
+	#search{
+		display:block;
+		float: left;
+		font-size: 24px;
+		margin-top: 10px;
+		margin-right: -170px;
+		color: #54a0ff;
+	}
+	#user{
+		display: block;
+		font-size: 24px;
+		color: #54a0ff;
+		margin-top: 10px;
+		padding-left: 100px;
+	}
+}
